@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr"x-data="{menuIsOpen: false" :class="{noscroll:menuIsOpen}">
+<html lang="fr"x-data="{menuIsOpen: false"> :class="{noscroll:menuIsOpen},">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,14 +14,12 @@
     <!-- header>h1{Test de menu} -->
     <header>
 
-      <button>menu</button>
+      <button aria-controls="mainNav"@click="menuIsOpen = ! munuIsOpen">
+        menu </button>
       <h1>Test de menu</h1>
-     <button>menu</button>
-     <nav id="mainNav" x-show="menuIsOpen">
 
+     <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
       
-     </nav>
-
       <ul>
         <li><a href="#">item 1</a></li>
         <li><a href="#">item 2</a></li>
@@ -29,6 +27,7 @@
       </ul>
      </nav>
     </header>
+    
     <!-- h2>lorem2^p>lorem -->
     <h2>Lorem, ipsum.</h2>
     <p>
