@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr"x-data="{menuIsOpen: false"> :class="{noscroll:menuIsOpen},">
-  <head>
+<html lang="fr" x-data="{menuIsOpen: false}">
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,17 +15,16 @@
     <!-- header>h1{Test de menu} -->
     <header>
 
-      <button aria-controls="mainNav"@click="menuIsOpen = ! munuIsOpen">
-        menu </button>
+      <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen">
+      menu </button>
       <h1>Test de menu</h1>
+      <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
+        <ul>
+          <li><a href="#">item 1</a></li>
+          <li><a href="#">item 2</a></li>
+          <li><a href="#">item 3</a></li>
+        </ul>
 
-     <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms class="menu">
-      
-      <ul>
-        <li><a href="#">item 1</a></li>
-        <li><a href="#">item 2</a></li>
-        <li><a href="#">item 3</a></li>
-      </ul>
      </nav>
     </header>
     
