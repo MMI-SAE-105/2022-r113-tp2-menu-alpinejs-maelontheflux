@@ -1,3 +1,4 @@
 - nom : Grosjean
 - prénom : Maël
-- URL publique du site :
+- URL publique du site : https://2022-r113-tp2-menu-alpinejs-maelonthe.netlify.app
+- URL publique du site chien et chat : https://2022-r113-tp3-chien-chat.netlify.app
